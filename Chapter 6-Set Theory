@@ -1,0 +1,17 @@
+Chapter 6：Set Theory//集合论
+overview
+In the late nineteenth centry,//在19世纪晚期 
+Georg Cantor was the first to realize the potential usefulness of investigating properties of sets in general as distinct from properties
+of the elements that comprise them.//格奥尔格·康托尔(德国数学家，集合论创始人)是第一个认识到 在通常情况下 集合审查属性的潜在用处，不同于构成他们元素
+的属性 as做什么成分？of的翻译？副词的位置？后边怎么翻译。
+Many mathematicians of his time resisted accepting the validity of Cantor's work.//在当时，许多数学家拒绝接受康托尔的理论成果
+Now，however abstract set theory is regarded as the foundation of mathematical thought.//然而，在今天抽象的集合论被认为是数学思想的基石。
+All mathematical objects (even numbers) can be defined in terms of sets,//所有的数学对象（甚至数字）都能用集合来定义，
+and  the language of set theory is used in every mathematical subject.//每一个数学研究主题都在使用集合论的术语。
+
+In this chapter we add to the basic definitions and notation of set therory introduced in Chapter 1 and show how to establish properties 
+of set through the use of proofs and counterexamples.//在这章中，我们加入在一张已经介绍过得基本理论和符号，并且展示如何通过使用证明和反例来建立
+集合的属性。
+We also introduce the notion of a Boolean algebra,explain how to derive its properties,//我们也将会介绍布尔代数的概念，解释怎么去获得他们的属性
+and discuss their relationships to logical equivalencies and set identities.//并且讨论他们和逻辑等价、集合特性的的关系。
+6.1 Set
