@@ -14,4 +14,17 @@ of set through the use of proofs and counterexamples.//在这章中，我们加�
 集合的属性。
 We also introduce the notion of a Boolean algebra,explain how to derive its properties,//我们也将会介绍布尔代数的概念，解释怎么去获得他们的属性
 and discuss their relationships to logical equivalencies and set identities.//并且讨论他们和逻辑等价、集合特性的的关系。
-6.1 Set
+
+6.1 Set Theroy: Definitions and the Element Method of Proof//定义和证明元素的方法
+The introduction of suitable abstractions is our only mental aid to organize and master complexity.--E.W.Dijkstra-2002
+//引入适当的抽象概念是我们对组织和掌握复杂性的唯一思想帮助。--艾兹格·迪科斯彻-2002
+The work set and element are undefined terms of set theory just as sentence, true, and false are undefined terms of logic.
+//如同逻辑学的命题、真、假一样，集合论中的集合和元素也没有被定义。
+The founder of set theory, Georg Cantor, suggested imagining a set as a "collection into a whole M of definite and separate objects
+of our intuition or our thought. These objects are called the elements of M."
+//格奥尔格·康托尔，集合论的建立者，认为集合可以定义成这样，我们直觉上或认为的明确和单独的对象集合而成的就是整个集合M。这些对象就是集合M的元素。
+Cantor used the letter M because it is the first letter of the German word for set: Menge.康奈尔之所以使用者单词M代表集合，是因为德文中集合是
+Menge，它的首个字母是M
+Following  the spirit of Cantor's notation (though not the letter), let S denote a set and a an element of s.//遵循康托尔理想的符号（尽管不
+是这个字母），让S表示一个集合和一个S的元素。
+Then,as an indicated in Section 1.2
