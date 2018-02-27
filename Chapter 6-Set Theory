@@ -27,4 +27,21 @@ Cantor used the letter M because it is the first letter of the German word for s
 Menge，它的首个字母是M
 Following  the spirit of Cantor's notation (though not the letter), let S denote a set and a an element of s.//遵循康托尔理想的符号（尽管不
 是这个字母），让S表示一个集合和一个S的元素。
-Then,as an indicated in Section 1.2
+Then,as an indicated in Section 1.2 //正如在1.2节里边指出的那样
+a ∈ s means that a is an element og S.a ∉ S means that a is not an element of S,{1, 2, 3} refers to the set whose elements are 1, 2, and, 
+3, and {1, 2, 3,...} refers to the set of all positive integers.//a∈S表示为a是S的一个元素，a∉S表示为a不是S的元素，集合{1, 2, 3}的元素有1,2,3
+集合 {1, 2, 3,...}的元素就是全体正实数。
+If S is a set and P(x) is a property that elements of S may or may not satisfy, then a set A may be defined by writring.//如果S是一个集合P(x)
+是S满足或者不满足的性质，那么一个集合可以被写成这种形式
+A = {x ∈ S|P(x)}
+which is read "the set of all x in S such that P of x."//读为"所有x构成的集合是S，每个元素都满足P的性质"
+Subsets: Proof and Disproof//子集的证明和反证
+We begin by rewriting what it means for a set A to be a subset of a set B as a formal universal conditional statement;//我们首先将集合
+B的子集A的意义表示为为一种正式通用条件语句。
+The negation is ,therefore, existential//因此，它的否定是。
+A proper subset of a set is a subset that is not equal to its containing set//一个集合的真子集就是不等同于这个集合的子集
+Example 6.1.1 Testing Whether One Set Is a Subset of Another//判断一个一个集合是否是另一个集合的子集。
+Let A = {1} and B = {1, {1}}.//让A = {1}并且B ={1, {1}}
+a. Is A B//A是否属于B
+b. If so, is A a proper subset of B?//如果是，那么A是B的真子集吗
+ 
