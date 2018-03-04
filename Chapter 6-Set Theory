@@ -91,7 +91,7 @@ Then s is an integer because products and sums of integers are integers.//因为
 Also 3s = 3(2r+4) = 6r + 12 = x,
 Thus,by definition of B,x is an elemrnt of B,[which is what was to be shown].// 又因为，3s = 3·(2r + 4) = 6r + 12 = x，所以根据集合B的定义，我们得出x是集合B的元素。【这就是我们想要证明】
 To disprove a statement means to show that it is false,and to show it is false that B A,you must find an element of B that is not an element of A.By the definitions of A and B,this means that you must find an integer x of the form 3·(some integer) that cannot be written in the form 6·(some integer) + 12.A little experimentation reveals that various number do the job .For instance ,you could let x = 3.Then x ∈ B because 3 = 3·1,but x not ∈ A because there is no integer r such that 3 = 6r+12.For if there were such an integer,then
-//去否定一个命题的意思是证明这个命题是假的，为了去证明B属于A是假的，你必须发现这么一个元素，她在集合B中但是它不在集合A中。通过集合A和集合B的定义，意味着你必须发现一个这样的整数，这个整数x满足3(some integer)却不满足6(some integer) + 12。一个小的尝试可以告诉你有好多个这种数字可以满足这个条件--------------------------------------------------------------------，例如，你可以让x等于3,因为3 = 3·1所以x属于集合B，又因为没有一个数字整数r满足等式3 = 6r + 12所以x不属于集合A。假设有这样一个整数，
+//去否定一个命题的意思是证明这个命题是假的，为了去证明B属于A是假的，你必须发现这么一个元素，她在集合B中但是它不在集合A中。通过集合A和集合B的定义，意味着你必须发现一个这样的整数，这个整数x满足3(some integer)却不满足6(some integer) + 12。一个小的尝试可以告诉你有好多个这种数字可以满足这个条件，例如，你可以让x等于3,因为3 = 3·1所以x属于集合B，又因为没有一个数字整数r满足等式3 = 6r + 12所以x不属于集合A。假设有这样一个整数，
  6r + 12 = 3  by asssumption 
  =>2r + 4 = 1 by deviding both by 3
  => 2r = 3    by subtrating 4 from both sides
@@ -104,7 +104,7 @@ To disprove a statement means to show that it is false,and to show it is false t
 但是3/2不是一个整数，因此3属于B但是3不属于A，即A不包含B。
 Set Equality//集合相等性
 Recall that by the axiom of extension, sets A and B are equal if, and only if ,they have exactly the same elements.We restate this as a definition that uses the language of subsets.
-//回想---------------------的扩展，集合A和B相等的条件，并且是唯一条件是，他们的元素完全相等。我们使用子集语言来做一个定义。
+//回想公理的扩展，集合A和B相等的条件，并且是唯一条件是，他们的元素完全相等。我们使用子集语言来做一个定义。
 Definition
 Given sets A and B, A equals B,written A = B,if and only if,every element of A is in B every elemrnt of B is in A.
 //定义，假设给定集合A和B，A等于B，可以写成A = B，只要每一个集合A的元素都在B中，每一个集合B的元素都在A中。
@@ -113,7 +113,7 @@ A = B <=> A B and B A.
 //符号化表示A = B <=> A B and B A.
 This version of the definition of equality implies the following:
 To know that a sets A equals a set B ,you must konw that A B and  you must also know that B A.
-//相等性的定义-----------指明了,为了得到A=B，你必须知道A B和B A。
+//相等性的定义指明了,为了得到A=B，你必须知道A B和B A。
 Example 6.1.3 Set Equality
 Define sets A and B as fllows:
 A = {m ∈ Z|m = 2a for some integer a}
@@ -163,17 +163,16 @@ However,in all three diagrams it be necessary to specify that there is a point i
 //然而，在这三个图中，指出一个点在A中而不在B中，是非常必要的。
 Example 6.1.4 Relations among Sets of Numbers//数字集合中的关系
 Since Z,Q and R denote the sets of integers, rational numbers, and real numbers,respectively,Z is a subset of R because every integer number is rational (any integer n can be written in the form n/1),and Q is a subset of R because every rational number is real(any rational number can be represented as a lenghth on the number line).
-//集合Z,Q,R分别表示整数集合，有理数集合，和实数集合，因为每个整数都是有理数（任何整数n都可以写成n/1的形式）所以Z是Q的子集，因为每一个有理数都是实数（任何有理数都可以表示为---------------------数字线的长度）所以Q是R的子集。
+//集合Z,Q,R分别表示整数集合，有理数集合，和实数集合，因为每个整数都是有理数（任何整数n都可以写成n/1的形式）所以Z是Q的子集，因为每一个有理数都是实数（任何有理数都可以表示为数轴上的一个长度）所以Q是R的子集。
 Z is a proper subset of Q because there are rational numbers that are not integers (for example,1/2),and Q is a proper subset of R because there are real numbers that are not rational(for example,根号2).
 //因为存在不是整数的有理数（如1/2）所以Z是Q的真子集；因为存在不是有理数的实数（列如根号2）所以Q是R的真子集。
 This is shown diagrammatically in Figure 6.1.3//他们的关系如图6.1.3所示。
 Operations On sets//集合的运算
-Most mathematical discussions are carried on within some context.//-------------------------------------大多数数学争论都是在特定的条件下。 
+Most mathematical discussions are carried on within some context.//大多数数学讨论都是在特定的条件下。 
 For example, in a certain situation all sets being considered might be sets of real numbers.
 //例如，在所有集合都被认为是实数集合的某个情况下。
 In such a situation，the set of real numbers would be called a universal set or a universe of discourse for the discussion.
-//在这种情况下，实数集对于这个问题被称为全集或者universe of discourse-----------------------------
-Definition//定义
+//在这种情况下，实数集对于这个问题被称为全集或者论域
 Let A and B be subset of a universal set U.
 1.The union of A and B,denoted A U B,is the set of all elements that are in at least one of A or B.
 //1.集合A和B并，表示为A U B，是包含所有至少在A或B集合中的元素的集合
@@ -188,22 +187,62 @@ A U B = {x ∈ U| x ∈ A or x ∈ B}
 A   B = {x ∈ U| x ∈ A and x ∈ B}
 B - A = {x ∈ U| x ∈ B or x not ∈ A}
 A c = {x ∈ U| x not ∈ A }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+The symbols ∈,∪, and ∩ were introduced in 1889 by the Italian mathematician Giuseppe Peano.//∈,∪,∩是由意大利数学家朱塞佩·皮亚诺在1889年引入。
+Venn diagram representations for union,intersection, defference, and complement are shown in Figure 6.1.4.
+//并集，交集，差集，补集的维恩图表示如图6.1.4所示。
+Example 6.1.5 Unions, Intersections, Differnce, and Complements
+//例子6.1.5 并集，交集，差集，补集
+Let the universal set be the set R of all real numbers and let
+A = (-1,0]={x ∈ R|-1 < x <= 0} and B = [0,1) = {x ∈ R|0 <= x < 1}.
+These sets are shown on the number lines below.
+Find A∪ B, A∩ B, B− A, and Ac
+//全集为实数集，让A = (-1,0]={x ∈ R|-1 < x <= 0}，B = [0,1) = {x ∈ R|0 <= x < 1}。
+集合在数轴上的表示如下所示：
+得出A∪ B, A∩ B, B− A, and Ac
+Solution//答案
+A∪ B ={ x ∈R|x ∈ (−1, 0]or x ∈[ 0, 1)}={ x ∈R|x ∈ (−1, 1)}=(−1, 1).
+A∩ B ={ x ∈R|x ∈ (−1, 0]and x ∈[ 0, 1)}={ 0}
+B− A ={ x ∈R|x ∈[ 0, 1) and x not ∈ (−1, 0]}={x ∈R|0 < x < 1}=(0,1) 
+Ac ={ x ∈R|it is not the case that x ∈ (−1, 0]} ={ x ∈R|it is not the case that (−1 < x and x ≤0)} { x ∈R|x ≤−1 orx > 0}=(−∞, −1]∪(0, ∞)//根据狄摩根律的双重不等式
+The definitons of unions and intersections for more than two sets are very simliar to the definitions for two sets.
+//对超过两集合的并集和交集的定义与两个集合的情况是一样的。
+Definition
+Unions and Intersections of an Indexed Collection of sets
+Given sets A0,A1,A2....that are subsets of a universal set U and given a nonnegative integer n,
+//定义
+n个集合的并集和交集的定义，给定集合A0,A1,A2他们是全集U的子集并且给定一个非负的整数n
+An alternative notation for is  A0 ∪ A1 ∪...∪ An, and an alternative notation for is A0 ∩ A1 ∩...∩ An.
+//符号代表A0 ∪ A1 ∪...∪ An，符号代表A0 ∩ A1 ∩...∩ An.
+Example 6.1.7 Finding Unions and Intersections of More than Two Sets
+//例子6.1.7多个集合的交集和并集
+For each positive integer i, letAi ={x ∈R|−1/i < x < 1/i} = Ai = (-1/i, 1/i) 
+//对于每个整数i,Ai ={x ∈R|−1/i < x < 1/i} = Ai = (-1/i, 1/i) 
+得到 A1 ∪ A2 ∪ A3 and A1 ∩ A2 ∩ A3.
+Solution//答案
+a. A1 ∪ A2 ∪ A3={x ∈R|x 至少在 (−1,1), or (−1/2, 1/2), or(−1/3,
+1/3)区间
+={x ∈R|−1 < x < 1} = (−1, 1)因为所有在区间(−1/2, 1/2)和(−1/3,
+1/3)的元素都在区间(−1, 1)。
+A1 ∩ A2 ∩ A3={x ∈R|x 同时在 (−1, 1), (−1/2, 1/2), and(−1/3,
+1/3)区间
+={x ∈R|−1/3 < x < 1/3} = (−1/3,1/3)。
+∞ 4i =1
+Ai ={x ∈R|x 至少在(−1/i ,
+1/i)区间中的一个, i是一个正数} ={x ∈R|−1 < x < 1} 因为每个在(−1/i ,1/i)区间的元素都在(-1, 1)
+Ai ={x ∈R|x 同时在(−1/i ,1/i),i是一个正数} ={0}因为同时在所有区间的元素只有0
+The Empty Set//空集
+We have stated that a set is definefd by the elements that compose it.This being so,can there be set that has no elements?
+//我们之前将集合定义为由它所包含的元素组成，这里也是这样，能否存在一个不包含任何元素的集合？
+It turns out that it is convenient to allow such a set.//事实证明，允许这样的集合是很方便的。
+Otherwise, every time we wanted to take the intersecton of two sets
+ or to define a set by specifying a property, we would have to check that the result had elements and hence qualified for "sethood."
+//否则，每次我们想去求两个交集或通过指定的属性去定义一个集合时。我们必须去确保结果有元素，因此胜任"sethood."
+For example, if A = {1, 3} and B = {2, 4}, then  A ∩ B has no elements.Neither does {x ∈ R |x2 = -1} because no real  numbers have negtive squares.
+//例如：如果 A = {1, 3} 、B = {2, 4},A ∩ B就不包含元素。{x ∈ R |x2 = -1} 也这样，因为没有任何实数的的平方是负数。
+It is somewhat unsetting to talk about a set with no elements, but it often happens in mathematics that the definitions formulated to fit one set of circumstances are satisfied by some extreme case not originally anticipated.
+//谈论一个没有元素的集合是让人不安的，但是这种情况在数学上是时常发生的。，阐释定义去符合在特定的情况，满足一些极端情况，但是不符合最初的预期。--------------------------------------------
+Yet changing the definitions to exclude those cases would seriously undermine the simplicity and elegance of theory taken as a whole.
+//然而改变定义去排除这些情况严重破坏了定义的简单性和整个理论的优雅性
 
 
 
