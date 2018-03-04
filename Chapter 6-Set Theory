@@ -71,11 +71,143 @@ a.Outline a proof that A B. b.Prove that A B c.Disprove that B A.
 Solution//答案
 a.Proof Outline
 suppose x is a particular but arbitrarily chosen element of A.
-//假设x是一个特殊的但是被任意选择的集合X中的元素。
+//假设x是一个特殊的但是被任意选择的集合A中的元素。
 .
 .
 .
 Therefore, x is an element of B//因此x是集合B的元素。
 b.proof: //b.证明
 suppose x is a particular but arbitrarily chosen element of A.
-[We must show that x∈B.By definition of B ,this means we must show that x = 3.(some integer)]
+[We must show that x∈B.By definition of B ,this means we must show that x = 3·(some integer)]
+//假设x是一个特殊的但是被任意选择的集合A中的元素。【我们必须证出x∈ B，根据B的定义，这就意味着我们必须证出x等于3乘以某个整数的积。】
+By definition of A,there is an inter r such that x = 6r + 12
+[Given that x = 6r + 12,can we express x as 3(some integer)?I.e does
+6r + 12 = 3·(some integer)?Yes,6r + 12 = 3·(2r + 4).]
+//根据集合A的定义，存在一个整数r满足x = 6r + 12
+Let s = 2r +4//让s = 2r +4;
+[we must check that s is an integer]//【我们必须确保s是整数】
+Then s is an integer because products and sums of integers are integers.//因为整数的积和和还是整数，所以s是一个整数。
+[Now we must check that x = 3s]//【现在我们必须确保x = 3s】
+Also 3s = 3(2r+4) = 6r + 12 = x,
+Thus,by definition of B,x is an elemrnt of B,[which is what was to be shown].// 又因为，3s = 3·(2r + 4) = 6r + 12 = x，所以根据集合B的定义，我们得出x是集合B的元素。【这就是我们想要证明】
+To disprove a statement means to show that it is false,and to show it is false that B A,you must find an element of B that is not an element of A.By the definitions of A and B,this means that you must find an integer x of the form 3·(some integer) that cannot be written in the form 6·(some integer) + 12.A little experimentation reveals that various number do the job .For instance ,you could let x = 3.Then x ∈ B because 3 = 3·1,but x not ∈ A because there is no integer r such that 3 = 6r+12.For if there were such an integer,then
+//去否定一个命题的意思是证明这个命题是假的，为了去证明B属于A是假的，你必须发现这么一个元素，她在集合B中但是它不在集合A中。通过集合A和集合B的定义，意味着你必须发现一个这样的整数，这个整数x满足3(some integer)却不满足6(some integer) + 12。一个小的尝试可以告诉你有好多个这种数字可以满足这个条件--------------------------------------------------------------------，例如，你可以让x等于3,因为3 = 3·1所以x属于集合B，又因为没有一个数字整数r满足等式3 = 6r + 12所以x不属于集合A。假设有这样一个整数，
+ 6r + 12 = 3  by asssumption 
+ =>2r + 4 = 1 by deviding both by 3
+ => 2r = 3    by subtrating 4 from both sides
+ => r = 3/2   by dividing both sides by 2
+ but 3/2 is not an integer.Thus 3 ∈ B but 3 not ∈ A and so B A.
+ //假设：6r + 12 = 3
+ 两边同时除以3得=>2r + 4 = 1
+ 两边同时减去4得=> 2r = 3
+ 两边同时除以2得=> r = 3/2
+但是3/2不是一个整数，因此3属于B但是3不属于A，即A不包含B。
+Set Equality//集合相等性
+Recall that by the axiom of extension, sets A and B are equal if, and only if ,they have exactly the same elements.We restate this as a definition that uses the language of subsets.
+//回想---------------------的扩展，集合A和B相等的条件，并且是唯一条件是，他们的元素完全相等。我们使用子集语言来做一个定义。
+Definition
+Given sets A and B, A equals B,written A = B,if and only if,every element of A is in B every elemrnt of B is in A.
+//定义，假设给定集合A和B，A等于B，可以写成A = B，只要每一个集合A的元素都在B中，每一个集合B的元素都在A中。
+symbolically:
+A = B <=> A B and B A.
+//符号化表示A = B <=> A B and B A.
+This version of the definition of equality implies the following:
+To know that a sets A equals a set B ,you must konw that A B and  you must also know that B A.
+//相等性的定义-----------指明了,为了得到A=B，你必须知道A B和B A。
+Example 6.1.3 Set Equality
+Define sets A and B as fllows:
+A = {m ∈ Z|m = 2a for some integer a}
+B = {n ∈ Z|n = 2b -2 for some integer b}
+Is A = B?
+Solution Yes.To prove this,both subset relation A B and B A must be prove.
+Part,Proof That A B:
+Suppose x is a particular but arbitrarily chosen element of A.
+[We must show that x ∈ B.By definition of B,this means we must show that x = 2·(some integer) - 2.]
+//6.1.3集合相等性的例子
+按如下定义集合A和B
+A = {m ∈ Z|m = 2a for some integer a}
+B = {n ∈ Z|n = 2b -2 for some integer b}
+集合A是否等于集合B
+答案：是的，为了证明他们相等，子集关系A B和B A都需要被证明。
+第一步，证明B包含A
+假设x是一个特殊的但是被任意选择的集合A中的元素。【我们必须证明x∈B,通过B的定义,这意味着我们必须证明x = 2·(some integer) - 2。】
+By definition of A,there is an integer a such that x = 2a.[Given that x = 2a, can x also be expressed as 2·(some integer) - 2?
+I.e,is here an integer, say b,such that 2a = 2b - 2?Solve for b to obtain b = (2a+2)/2 = a + 1.Check to see if this works.]
+//通过A的定义，有一个整a满足x=2a.
+[假设x = 2a，x能否写成这种形式2·(some integer) - 2?是否存在整数b使得2a = 2b - 2?解出b可得b = (2a +2)/ 2 = a + 1.检查这个结果。]
+Let b = a + 1.[first check that b is an integer.]
+Then b is an integer becasuse it is a sum of integers.[Then check that x = 2b - 2.]
+Also 2b - 2 = 2(a + 1) - 2 = 2a + 2 -2 = 2a = x,
+Thus,by definiton of B,x is an element of B[which is what was to be shown].
+//让b = a + 1.【第一步检查不是一个整数】
+因为b是整数的和所以b是整数【确保x = 2b -2】
+又因为 2b - 2 = 2(a + 1) - 2 = 2a + 2 -2 = 2a = x，因此，又由B的定义渴的，x是B的元素【这就是我们要证明的】。
+Part 2.Proof that B A:This part of the proof is left as exercise 2 at end of this section.
+//第二部分，证明A包含B：这部分的证明留作这章最后的练习题2。
+Venn Diagrams//维恩图
+If sets A and B are represented as regions in the plane, relationshios between A and B can be represented by pictures, called Venn disagrams, that were introduced by the British mathematician John Venn in 1881.
+//如果集合A和B可以在平面上表示为区域，那么A和B的关系可以由图像来表示，这称为维恩图，它是英国数学家John Venn在1881提出的。
+For instance, the relationships A B can be pictured in one of two ways,as shown in Figure 6.1.1
+//例如，有两种任何一种都可以表示A B，如图6.1.1所示
+The relationships A B can be represnted in three different ways with Venn diagrams, as shown in Figure 6.1.2
+//用Veen图有三种不同的方式可以表示AB的关系，如图6.1.2所示。
+If we allow the possiblity that some subregious of Venn diagrams do not contain any points, then in Figure6.1.1 diagram(b) can be viewed as a special case of diagram (a) by imaging that the part of B outside A does not contain any points.
+//如果我们允许这种可能的情况出现，这种情况就是维恩图的子区域不包含任何的点。我们可以将图6.1.1(b)看为图6.1.1(a)de 特殊情况，即在A内部的B不包含任何的点
+Similarly,diagrams (a) and (c) of Figure 6.1.2 can be viewed as special cases of diagram (b).
+//同样，图6.1.2的(a)和(c)可以看作(b)的特例。
+Tp obtian (a) from (b),imagine that the region of overlap between A and B does not contain any points.
+//为了从(b)得到(a)，我们可以想象A和B的重合区域没有包含任何点。
+To obtian (c),imagine that the part of B that lies outside A does not contain any points.
+//为了获得(c)，我们可以想象B位于A外面的区域没有包含任何点。
+However,in all three diagrams it be necessary to specify that there is a point in A that is not in B.
+//然而，在这三个图中，指出一个点在A中而不在B中，是非常必要的。
+Example 6.1.4 Relations among Sets of Numbers//数字集合中的关系
+Since Z,Q and R denote the sets of integers, rational numbers, and real numbers,respectively,Z is a subset of R because every integer number is rational (any integer n can be written in the form n/1),and Q is a subset of R because every rational number is real(any rational number can be represented as a lenghth on the number line).
+//集合Z,Q,R分别表示整数集合，有理数集合，和实数集合，因为每个整数都是有理数（任何整数n都可以写成n/1的形式）所以Z是Q的子集，因为每一个有理数都是实数（任何有理数都可以表示为---------------------数字线的长度）所以Q是R的子集。
+Z is a proper subset of Q because there are rational numbers that are not integers (for example,1/2),and Q is a proper subset of R because there are real numbers that are not rational(for example,根号2).
+//因为存在不是整数的有理数（如1/2）所以Z是Q的真子集；因为存在不是有理数的实数（列如根号2）所以Q是R的真子集。
+This is shown diagrammatically in Figure 6.1.3//他们的关系如图6.1.3所示。
+Operations On sets//集合的运算
+Most mathematical discussions are carried on within some context.//-------------------------------------大多数数学争论都是在特定的条件下。 
+For example, in a certain situation all sets being considered might be sets of real numbers.
+//例如，在所有集合都被认为是实数集合的某个情况下。
+In such a situation，the set of real numbers would be called a universal set or a universe of discourse for the discussion.
+//在这种情况下，实数集对于这个问题被称为全集或者universe of discourse-----------------------------
+Definition//定义
+Let A and B be subset of a universal set U.
+1.The union of A and B,denoted A U B,is the set of all elements that are in at least one of A or B.
+//1.集合A和B并，表示为A U B，是包含所有至少在A或B集合中的元素的集合
+2.The intersection of A and B,denoted A B,is the set of all elements that are common to both A and B.
+//2.集合A和B的并，表示为A B，是由所有在A又在B的元素所组成的集合。
+3.The difference of B minus A (or relative complement of A in B), denoted B - A ,is the set of all elements that are in B and not A.
+//3.B与A的差，表示为 B - A（或者，A相对B的补），是所有那些在B不在A的元素组成的集合。
+4.The complement of A, denoted A, is the set of all elements in U that are  not in A.
+//4.集合A的补，表示为A，是所有在全集中不在A中的元素所组成的集合。
+Symbolically://符号化表示：
+A U B = {x ∈ U| x ∈ A or x ∈ B}
+A   B = {x ∈ U| x ∈ A and x ∈ B}
+B - A = {x ∈ U| x ∈ B or x not ∈ A}
+A c = {x ∈ U| x not ∈ A }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
