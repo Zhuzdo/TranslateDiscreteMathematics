@@ -240,13 +240,145 @@ Otherwise, every time we wanted to take the intersecton of two sets
 For example, if A = {1, 3} and B = {2, 4}, then  A ∩ B has no elements.Neither does {x ∈ R |x2 = -1} because no real  numbers have negtive squares.
 //例如：如果 A = {1, 3} 、B = {2, 4},A ∩ B就不包含元素。{x ∈ R |x2 = -1} 也这样，因为没有任何实数的的平方是负数。
 It is somewhat unsetting to talk about a set with no elements, but it often happens in mathematics that the definitions formulated to fit one set of circumstances are satisfied by some extreme case not originally anticipated.
-//谈论一个没有元素的集合是让人不安的，但是这种情况在数学上是时常发生的。，阐释定义去符合在特定的情况，满足一些极端情况，但是不符合最初的预期。--------------------------------------------
+//谈论一个没有元素的集合是让人不安的，但是阐释定义去符合在特定的情况下，去满足一些不符合最初的设想的极端情况在数学上是时常发生的。
 Yet changing the definitions to exclude those cases would seriously undermine the simplicity and elegance of theory taken as a whole.
 //然而改变定义去排除这些情况严重破坏了定义的简单性和整个理论的优雅性
+In Section 6.2 we will show that there is only one set with no elements.
+//在6.2节，我们将展示一个没有元素的集合。
+Because it is unique, we can give it a special name. We call it the empty set(or null set) and denote it by the symbol ∅.
+Thus{1,3}∩{2,4}=∅and{x ∈R|x2 =−1} = ∅;
+//由于这种集合很独特，所以我们可以给他一个特殊的名称。我们把他称为空集，并用符号∅来表示他。因此{1,3}∩{2,4}=∅{x ∈R|x2 =−1} = ∅;
+Example 6.1.8 A Set with No Elements//例子6.1.8没有元素的的集合
+Describe the set D ={ x ∈R|3 < x < 2}. //描述集合D ={ x ∈R|3 < x < 2}
+Solution//答案
+Recall that a < x < b means that a < x and x < b.//回忆a < x < b的意思是a < x 且 x < b。
+So D consists of all real numbers that are both greater than 3 and less than 2.//因此集合D包含所有大于3小于2的实数。
+Since there are no such numbers, D has no elements and so D = ∅.
+//因为没有这样的数字，所以集合D是空集。
+Paritions of Sets//集合的分割
+In many applications of set theory, sets are divided up into nonoverlapping(or disjoint) pieces. Such a division is called a partition.
+//在许多集合论的应用中，把集合划分为不相交的块，这样的划分叫做分割。
+Definition 
+Two sets are called disjoint if, and only if, they have no elements in common.
+Symbolically:
+A and B are disjoint ⇔ A∩ B =∅ .
+//定义：有且只有两个集合没有共同的元素，则它们互斥
+符号化的表示为A 和 B互斥  ⇔ A∩ B =∅ 
+Example 6.1.9 Disjoint Sets//例6.1.9互斥集
+Let A ={ 1,3,5}and B ={ 2,4,6}. AreA and B disjoint?
+//让A ={ 1,3,5}且 B ={ 2,4,6}，集合A和B互斥吗？
+Solution Yes.By inspection A and B have no elements in common, or, in other words,{1,3,5}∩{2,4,6}=∅
+//答案，是互斥的，通过对集合A和B的观察，他们没有共同元素，也就是{1,3,5}∩{2,4,6}=∅
+Deﬁnition 
+Sets A1, A2, A3 ...are mutually disjoint(or pairwise disjoint or nonoverlapping) if, and only if, no two sets Ai and Aj with distinct subscripts have any elements in common. More precisely, for all i, j =1,2,3,... Ai ∩ Aj =∅ whenever i not = j.
+//定义，集合A1、A2、A3两两互斥，有且仅有集合Ai和Aj没有相同的元素。更确切的说，对于所有集合i, j =1,2,3,... Ai ∩ Aj =∅ 当 i not = j.
+Example 6.1.10 Mutually Disjoint Sets//例子6.1.10两两互斥的集合
+a. Let A1 ={ 3,5}, A2 ={ 1,4,6}, and A3 ={ 2}. AreA1, A2, and A3 mutually disjoint? b. Let B1 ={ 2,4,6}, B2 ={ 3,7}, and B3 ={ 4,5}. AreB1, B2, and B3 mutuallydisjoint?
+//a.让A1 ={ 3,5}, A2 ={ 1,4,6}, 和 A3 ={ 2}。那么他们是否两两互斥？
+b.让B1 ={ 2,4,6}, B2 ={ 3,7}, 和 B3 ={ 4,5}。那么他们是否两两互斥？
+Solution//答案
+a.Yes.A1 and A2 have no elements in common,A1 and A3 have no elements in common,and A2 and A3 have no elements in common.
+b.No.B1 and B3 both contain 4.
+//a.是的，A1和A2没有相同的元素，A1和A3也没有相同的元素，A2和A3没有相同的元素。
+b.不是。B1和B3都包含4。
+Suppose A, A1, A2, A3 and A4 are the sets of points represented by the regions shown in Figure 6.1.5.
+//假设A, A1, A2, A3 和A4是有区域表示的点集。如图6.1.5所示。
+Then A1,A2,A3,and A4 are subsets of A, and A = A1 ∪ A2 ∪ A3 ∪ A4.
+//而且A1,A2,A3,A4 是集合A的子集， A = A1 ∪ A2 ∪ A3 ∪ A4。
+Suppose further that boundaries are assigned to the regions representing A2,A3 and A4 in such a way that these sets are mutually disjoint.
+//进一步假设给代表集合A2、A3、A4的区域分配边界，在这种情况下这些集合是两两互斥的。
+Then A is called a union of mutually disjoint subsets, and the collection of sets {A1,A2,A3,A4} is said to be a  partition of A.
+//A是两两互斥子集的交，这些集合就是A的一个划分。
+Definition 
+A finite or infinite collection of nonempty sets {A1,A2,A3...} is a partition of a set A if,and only if,
+1. A is the union of all the Ai
+2. The set A1,A2,A3...are mutually disjoint.
+//定义
+如果1.A是所有Ai的交2.这些集合A1、A2、A3两两互斥，那么非空集合的有限或者无限集是集合A的一个划分。
+Example 6.1.11 Patitions of sets//例子6.1.11集合的划分
+a.Let Let A ={ 1,2,3,4,5,6}, A1 ={ 1,2}, A2 ={ 3,4}, and A3 ={ 5,6}. Is {A1, A2, A3} a partition of A? 
+b. Let Z be the set of all integers and let T0 ={ n ∈Z|n =3k,for some integer k}, T1 ={ n ∈Z|n =3k+1,for some integer k},and T2 ={ n ∈Z|n =3k+2,for some integer k}. Is{T0,T1,T2}a partition of Z
+//a.让A ={ 1,2,3,4,5,6}, A1 ={ 1,2}, A2 ={ 3,4},A3 ={ 5,6}。{A1, A2, A3}是集合A的划分吗？
+b.让Z是一个包含所有整数的集合，让T1 ={ n ∈Z|n =3k+1,for some integer k},and T2 ={ n ∈Z|n =3k+2,for some integer k}。{T0,T1,T2}是Z的划分吗？
+Solution//答案
+a.yes.By inspection,A =  A1 ∪ A2 ∪ A3 and the sets A1, A2, and A3 are mutually disjoint.
+b.Yes,By the quotient-remainer theorem, every integer n can be reprsented in exactly one of the three forms
+n = 3k or n = 3k + 1 or n = 3k + 2.
+for some integer k. This implies that no integer can be in any two of sets T0,T1, or T2. So T0,T1, and T2 are mutually disjoint.It also implies that every integer is in one of the sets T0,T1,or T2.So Z = T0 ∪T1 ∪T2.
+//a.是的，经过观察，A1 ∪ A2 ∪ A3并且A1、A2、A3两两互斥。
+b.是的，通过quotient-remainer定理，每个整数n都可以被以下3种形式之一表示，n = 3k or n = 3k + 1 or n = 3k + 2.k是任意整数。这表明没有一个整数同时属于集合T0、T1、T2中的两个，所以T0、T1、T2两两互斥。也表明每个整数都属于集合T0、T1、T2中的一个。综上，Z = T0 ∪T1 ∪T2。
+Power sets//幂集
+There are various situtations in which it is useful to consider the set of all subsets of a particular set. The power set axiom guarantees that this is a set.
+//在多种情况中，考虑一个指定集合的所有子集组成的集合是非常有意义的。幂集公里保证这是一个集合。
+Definition
+Given a set A,the power of set of A,denoted (A), is the set of all subsets of A.
+//定义；给定集合A，A的幂集是包含它所有子集的集合。
+Example 6.1.12 Power Set of a Set
+Find the power set of the set {x,y}.That is, find P({x,y})
+//例子6.1.12一个集合的幂集
+得到集合{x,y}的幂集，就是说得到P({x,y})
+Solution P({x,y}) is the of all subsets of a{x,y}.In section 6.2 we will show that ∅ is a subset of every set, and so  ∅∈P({x, y}).Also any set is a subset of itself, so {x,y} ∈P({x, y}).The only other subsets of {x,y} are {x} and {y},so P({x, y}) = {0, {x}, {y}, {x,y}}
+//答案 P({x,y})是集合{x,y}所有子集，在6.2节我们将会证明空集是任何集合的子集，所以 ∅∈P({x, y})。任何集合自己是自己的子集，所以{x,y} ∈P({x, y})。其他两个子集是{x}和{y}。综上P({x, y}) = {0, {x}, {y}, {x,y}}
+Cartesian Products//笛卡尔积
+Recall that the definition of a set is unaffected by the order in which its elements are listed or the fact that some elements may be listed more than once.//回想一下，集合的定义与元素的顺序或元素重复无关。
+Thus {a,b},{b,a}, and {a,a,b} all represent the same set.
+//因此集合{a,b},{b,a},{a,a,b}都表示一个相同的集合
+The notation for an ordered n-tuple is a generalization of the notation for an ordered pair.//有序n元组的符号是对有序对的符号的一般化。
+(See Section 1.2)It takes both order and multiplicity into account.
+//（见1.2节）它同时考虑了元素的顺序和多重性。
+Definition
+Let n be a positive integer and let x1,x2,....,xn be (not necessary distinct) elements.//让n是一个正整数，让x1,x2,....,xn（不必完全不同）为元素。
+The ordered n-tuple,(x1,x2,......,xn), consists of x1,x2,...xn together with the ordering:first x1,then x2,and so forth up to xn.
+//n元有序组，(x1,x2,......,xn)，由元素x1,x2,...xn 组成且顺序为x1是第一个元素，然后是x2，等等直到xn。
+An ordered 2-tuple is called an ordered pair, and ordered 3-tuple is called an ordered triple.
+//有序2元组被称为有序对，并且有序3元组被称为有序三元组。
+Two ordered n-tuples (x1,x2,...,xn) and (y1,y2,...,y3) are equal if, and only if, x1 = y1,x2 = y2,...xn = yn。
+//如果有且仅有x1 = y1,x2 = y2,...xn = yn。那么两个有序n元组(x1,x2,...,xn)和(y1,y2,...,y3)相等 
+symbolically//符号化表示
+(x1,x2,...,xn) = (y1, y2,...,yn) ⇔ x1 = y1,x2 = y2,...,xn = yn. 
+In particular,//特别
+(a,b) = (c,d) ⇔ a =c and b =d.
+Example 6.1.13 Ordered n-tuples //有序n元组
+a. Is (1, 2, 3, 4)=(1, 2, 4, 3)?//a.是否(1, 2, 3, 4)=(1, 2, 4, 3)?
+b. Is(3,(−2)2, 1/2) = (√9,4, 3/6)?//b.是否(3,(−2)2, 1/2) = (√9,4, 3/6)？
+Solution//答案
+a.No.By definitation of equality of ordered 4-tuples,
+(1, 2, 3, 4) = (1, 2, 4, 3) ⇔1=1, 2=2, 3=4, and 4=3 
+But 3 not= 4, and so the ordered 4-tuples are not equal.
+//不是，通过有序4元组相等性的定义，得(1, 2, 3, 4) = (1, 2, 4, 3) ⇔1=1, 2=2, 3=4, 4=3，但是3不等于4，所以它们不相等 
+b.Yes.By definition of equality of ordered triples，
+(3,(−2)2, 1/ 2) = (√9,4, 3/6) ⇔ 3=√9 and (−2)2 =4 and 1/2 = 3/6.
+Because these equations are all true, the two ordered triples are equal.//b.是的，通过有序4元组相等性的定义，得(3,(−2)2, 1/ 2) = (√9,4, 3/6) ⇔ 3=√9, (−2)2 =4, 1/2 = 3/6。这些等式都成立，所以这两个有序3元组是相等的。
+Definition
+Given sets A1,A2,...,An, the Cartesian product of A1,A2,....,An denoted A1 ×A2 ×...×An, is the set of all ordered n-tuples (a1,a2,...,a3) where a1 ∈ A1,a2 ∈ A2,...,an ∈ An.
+//定义：给定集合A1,A2,...,An。他们的笛卡尔积是有序n元组(a1,a2,...,a3) 并且a1 ∈ A1,a2 ∈ A2,...,an ∈ An，可以表示为A1 ×A2 ×...×An。
+symbolically//符号化表示
+A1 × A2 ×···×An ={ (a1,a2,...,an)|a1 ∈ A1,a2 ∈ A2,...,an ∈ An}.
+In particular//例如
+A1 × A2 ={ (a1,a2)|a1 ∈ A1 and a2 ∈ A2} 
+is the Cartesian product of A1 and A2.//是集合A1和A2的笛卡尔积。
+Example 6.1.14 Cartesian Products//笛卡尔积
+Let A1 ={ x, y}, A2 ={ 1,2,3}, and A3 ={ a,b}. a. Find A1 × A2. b. Find (A1 × A2)× A3. c. Find A1 × A2 × A3.
+//让A1 ={ x, y}, A2 ={ 1,2,3}, A3 ={ a,b}。
+ a. 得到 A1 × A2. b. 得到 (A1 × A2)× A3. c. 得到 A1 × A2 × A3.
+Solution//答案
+a. A1 × A2 ={ (x,1),(x,2),(x,3),(y,1),(y,2),(y,3)}
+b. The Cartesian product of A1 and A2 is a set, so it may be used as one of the sets making up another Cartesian product. This is the case for (A1 × A2)× A3. 
+(A1 × A2)× A3 ={ (u,v)|u ∈ A1 × A2 and v ∈ A3} = {((x,1),a),((x,2),a),((x,3),a),((y,1),a), ((y,2),a),((y,3),a),((x,1),b),((x,2),b),((x,3),b), ((y,1),b),((y,2),b),((y,3),b)} 
+//b. A1和A2的笛卡尔积是一个集合，所以它也可以作为一个集合去构成另一个笛卡尔积，这就是(A1 × A2)× A3。
+(A1 × A2)× A3 ={ (u,v)|u ∈ A1 × A2 and v ∈ A3} = {((x,1),a),((x,2),a),((x,3),a),((y,1),a), ((y,2),a),((y,3),a),((x,1),b),((x,2),b),((x,3),b), ((y,1),b),((y,2),b),((y,3),b)} 
+c. The Cartesian product A1 × A2 × A3 is superﬁcially similar to, but is not quite the same mathematical object as, (A1 × A2)× A3.(A1 × A2)× A3 is a set of ordered pairs of which one element is itself an ordered pair, whereas A1 × A2 × A3 is a set of ordered triples. By deﬁnition of Cartesian product, 
+//笛卡儿积A1 A2××A3是表面上相似与(A1×A2)×A3，但是是不相同的数学对象。(A1×A2)×A3是有序对，它的一个元素是另一个有序对,而A1×A2×A3是一组有序三元组。根据笛卡尔积的定义
+A1 × A2 × A3 ={ (u,v,w)|u ∈ A1,v∈ A2,and w ∈ A3} ={ (x,1,a),(x,2,a),(x,3,a),(y,1,a),(y,2,a), (y,3,a),(x,1,b),(x,2,b),(x,3,b),(y,1,b), (y,2,b),(y,3,b)}.
 
-
-
-
+An Algorithm to Check Whether One Set Is a Subset of Another(optional)//检查一个集合是不是令一个集合的算法（可选的）
+You may get some additional insight into the concept of subset by considering an algorithm for checking whether one finite set is a subset of another.
+//通过考虑检查一个有限集是否是另一个的子集的算法，你可能会对子集的概念有更深的理解。
+Order the elements of both sets and successively compare each element of the first set with each element of the second set.//使两个集合有序然后比较两个集合的元素。
+If some element of the first set is not found to equal any element of the second, then the first set is not a subset of the second.//如果第一个集合中的一些元素不等于第二哥集合中的，得到第一个集合不是第二个集合的子集。
+But if each element of the first set is found to equal an element of the second set, then the first set is a subset of the second.//但是如果第一个集合中的每一个元素都等于第二个集合中的元素，那么第一个集合是第二个集合的子集。 
+The following algorithm formalizes this reasoning.
+//下面的的算法是推理过程
 
 
 
